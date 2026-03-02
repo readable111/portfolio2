@@ -1,26 +1,46 @@
-@import "tailwindcss";
-
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  --bg0:       #0d0c0c; /* dragonBlack0 */
+  --bg1:       #12120f; /* dragonBlack1 */
+  --bg2:       #1D1C19; /* dragonBlack3 */
+  --bg3:       #282727; /* dragonBlack4 */
+  --bg4:       #393836; /* dragonBlack5 */
+  --panel:     #1a1a15;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --fg:        #c5c9c5; /* dragonWhite */
+  --fg-dim:    #a6a69c; /* fujiGray */
+  --fg-dark:   #8a8980;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --red:       #c4746e; /* dragonRed */
+  --orange:    #b6927b; /* dragonOrange */
+  --orange2:   #c4a882; /* dragonOrange2 */
+  --yellow:    #c4b28a; /* dragonYellow */
+  --green:     #8a9a7b; /* dragonGreen */
+  --green2:    #87a987; /* dragonGreen2 */
+  --teal:      #6e915a;
+  --blue:      #8ba4b0; /* dragonBlue */
+  --blue2:     #7fb4ca; /* dragonBlue2 */
+  --violet:    #8992a7; /* dragonViolet */
+  --pink:      #a292a3; /* dragonPink */
+  --aqua:      #7eb3c9;
+
+  /* semantic roles */
+  --accent:    var(--blue2);
+  --accent2:   var(--orange2);
+  --string:    var(--green2);
+  --keyword:   var(--violet);
+  --func:      var(--blue2);
+  --type:      var(--aqua);
+  --comment:   #6a6a5e;
+  --cursor:    var(--orange2);
+
+  --border:    #2a2a24;
+  --gutter:    #252520;
+  --linenum:   #4a4a40;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg1)
 }
