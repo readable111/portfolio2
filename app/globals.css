@@ -34,13 +34,20 @@
   --cursor:    var(--orange2);
 
   --border:    #2a2a24;
-  --gutter:    #252520;
+--gutter:    #252520;
   --linenum:   #4a4a40;
 }
 
-body {
-  margin: 0px;
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--bg1)
+    body {
+      background: var(--bg0);
+      color: var(--fg);
+      font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      font-size: 13.5px;
+      line-height: 1.7;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+.d-none {
+  display: none;
 }

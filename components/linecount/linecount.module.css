@@ -1,0 +1,8 @@
+.linecount {
+  display: grid;
+  grid-template-columns: 48px;
+  background: var(--bg0);
+  border-right: 1ps solid var(--gutter);
+  padding: 0 10px;
+  user-select: none;
+}
